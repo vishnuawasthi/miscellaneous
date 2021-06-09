@@ -34,8 +34,10 @@ public class TaskServiceImpl implements TaskService {
 		Optional<Task> taskOption = taskList.stream().filter(task -> {
 			return task.getDescription().equalsIgnoreCase(taskName);
 		}).findFirst();
-
-		Task task = taskOption.get();
+		Task task = null;
+		if (taskOption.isPresent()) {
+			task = taskOption.get();
+		}
 
 		System.out.println("findTask() - end");
 		return task;
