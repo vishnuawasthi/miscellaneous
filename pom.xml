@@ -40,18 +40,9 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 							<addClasspath>true</addClasspath>
 							<mainClass>com.app.Application</mainClass>
-
 						</manifest>
-						<archive>
-							<manifestEntries>
-								<Specification-Title>${project.name}</Specification-Title>
-								<Specification-Version>${project.version}</Specification-Version>
-								<Implementation-Version>${build.number}</Implementation-Version>
-							</manifestEntries>
-						</archive>
 					</archive>
 				</configuration>
 			</plugin>
