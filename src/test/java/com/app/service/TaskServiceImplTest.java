@@ -26,7 +26,7 @@ public class TaskServiceImplTest {
 	
 	@Test
 	public void testFindTask2() {
-		Task task = impl.findTask("TASK-3");
+		Task task = impl.findTask("TASK-8");
 		assertNotNull(task);
 	}
 }
