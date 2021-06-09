@@ -1,6 +1,7 @@
 package com.app.service;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,6 +28,6 @@ public class TaskServiceImplTest {
 	@Test
 	public void testFindTask2() {
 		Task task = impl.findTask("TASK-8");
-		assertNotNull(task);
+		assertNull(task);
 	}
 }
