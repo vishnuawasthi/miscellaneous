@@ -22,4 +22,11 @@ public class TaskServiceImplTest {
 		Task task = impl.findTask("TASK-1");
 		assertNotNull(task);
 	}
+	
+	
+	@Test
+	public void testFindTask2() {
+		Task task = impl.findTask("TASK-3");
+		assertNotNull(task);
+	}
 }
