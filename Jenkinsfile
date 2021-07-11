@@ -1,11 +1,9 @@
 pipeline {
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                mvn clean 
-                mvn install
-                
-                
+                bat 'set'
             }
         }
     }
